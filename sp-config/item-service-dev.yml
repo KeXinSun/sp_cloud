@@ -6,6 +6,9 @@ spring:
     port: 5672
     username: admin
     password: admin 
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port} 
 #server:
 #  port: 8001
 eureka:
