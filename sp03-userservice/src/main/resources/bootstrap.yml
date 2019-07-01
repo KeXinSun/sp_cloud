@@ -6,7 +6,7 @@ spring:
         service-id: config-server
       name: user-service
       profile: dev
-      inetutils:
+    inetutils:
       ignored-interfaces:
          - VM.*      
 eureka:

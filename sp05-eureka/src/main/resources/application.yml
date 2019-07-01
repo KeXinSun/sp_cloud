@@ -1,15 +1,16 @@
 spring:
   application:
     name: eureka-server
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}     
+ 
 #server:
 #  port: 2001
 
 eureka:
   server:
     enable-self-preservation: false
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}        
 #  instance:
 #    hostname: eureka1
 #  client:
